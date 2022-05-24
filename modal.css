@@ -7,6 +7,7 @@
   width: 100vw;
   height: 100vh;
   color: black;
+  transition: all 3s ease-in;
 }
 .modal {
   display: flex;
@@ -16,6 +17,7 @@
   margin-top: 100px;
   background-color: white;
   width: 800px;
+  transition: all 0.3s ease-in-out;
 }
 .container header {
   width: 100%;
@@ -63,3 +65,4 @@ section p {
 .hide {
   display: none !important;
 }
+
