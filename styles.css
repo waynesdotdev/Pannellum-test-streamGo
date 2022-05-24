@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(4, 202, 202);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding: 0 100px;
+}
+h1 {
+  font-weight: 400;
+}
+h1 span {
+  font-weight: 900;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* pannelum specific */
+#panorama {
+  width: 100vw;
+  height: 600px;
+}
+div.pnlm-tooltip span {
+  background-color: rgb(55, 183, 242);
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+}

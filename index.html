@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"
@@ -12,22 +18,28 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"
     ></script>
-    <style>
-      #panorama {
-        width: 100vw;
-        height: 600px;
-      }
-    </style>
+
+    <link rel="stylesheet" href="styles.css" />
     <title>streamGo Test Pannellum</title>
   </head>
   <body>
+    <header>
+      <div class="logo">
+        <h1>Feeding <span>Matters</span></h1>
+      </div>
+      <nav>
+        <ul>
+          <li>Lobby</li>
+          <li>Agenda</li>
+          <li>Speakers</li>
+          <li>Sponsor Hall</li>
+          <li>Resourses</li>
+          <li>Accreditation</li>
+          <li>Lightning Talks</li>
+        </ul>
+      </nav>
+    </header>
     <div id="panorama"></div>
-    <script>
-      pannellum.viewer('panorama', {
-        type: 'equirectangular',
-        panorama: './panarama.jpg',
-        autoLoad: true,
-      })
-    </script>
+    <script src="app.js" defer></script>
   </body>
 </html>
