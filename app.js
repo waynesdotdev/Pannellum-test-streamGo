@@ -7,7 +7,8 @@ pannellum.viewer('panorama', {
   title: 'streamGo test',
   author: 'Wayne Fox',
 
-  hotSpotDebug: true,
+  // for debugging and gettin yaw and pitch
+  // hotSpotDebug: true,
   hotSpots: [
     {
       pitch: -11.77,
