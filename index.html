@@ -7,10 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"
     />
@@ -18,28 +14,61 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"
     ></script>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="modal.css" />
     <title>streamGo Test Pannellum</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <h1>Feeding <span>Matters</span></h1>
+        <img src="./header-logo.svg" alt="hello" />
       </div>
       <nav>
         <ul>
-          <li>Lobby</li>
-          <li>Agenda</li>
-          <li>Speakers</li>
-          <li>Sponsor Hall</li>
-          <li>Resourses</li>
-          <li>Accreditation</li>
-          <li>Lightning Talks</li>
+          <li><a href="#">Lobby</a></li>
+          <li><a href="#">Agenda</a></li>
+          <li><a href="#">Speakers</a></li>
+          <li><a href="#">Sponsor Hall</a></li>
+          <li><a href="#">Resourses</a></li>
+          <li><a href="#">Accreditation</a></li>
+          <li><a href="#">Lightning Talks</a></li>
         </ul>
       </nav>
     </header>
     <div id="panorama"></div>
+    <article id="modal-background" class="modal">
+      <div class="container">
+        <header>
+          <h2>Welcome</h2>
+          <span id="hide-modal">X</span>
+        </header>
+        <main>
+          <section>
+            <img src="./screenshot.png" alt="video screenshot" />
+          </section>
+          <section class="info">
+            <p>
+              Welcome to the event. This is a 360 view and you can scroll to
+              your left and right to navigate the different rooms. Collect our
+              Feeding Matters icons through the site, and engage with our
+              sponsors to earn points that will enter you into a raffle to win a
+              $250 Visa gift card or free registration to our 2023 conference.
+            </p>
+          </section>
+          <hr />
+          <section class="note">
+            <p>
+              <span>Note:</span> If you are viewing this event on a mobile, we
+              recommend landscape mode.
+            </p>
+          </section>
+        </main>
+      </div>
+    </article>
     <script src="app.js" defer></script>
   </body>
 </html>

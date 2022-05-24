@@ -1,3 +1,13 @@
+// hide modal on click of x
+const hideModal = document.getElementById('hide-modal')
+const modalBackground = document.getElementById('modal-background')
+
+hideModal.addEventListener('click', function hideModalHandler() {
+  modalBackground.className = 'hide'
+})
+
+// pannellum
+
 pannellum.viewer('panorama', {
   type: 'equirectangular',
   panorama: './panarama.jpg',
