@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"
+    ></script>
+    <style>
+      #panorama {
+        width: 100vw;
+        height: 400px;
+      }
+    </style>
+    <title>streamGo Test Pannellum</title>
+  </head>
+  <body>
+    <div id="panorama"></div>
+    <script>
+      pannellum.viewer('panorama', {
+        type: 'equirectangular',
+        panorama: './panarama.jpg',
+      })
+    </script>
+  </body>
+</html>
